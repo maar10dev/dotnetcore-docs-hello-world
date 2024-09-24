@@ -14,6 +14,8 @@ public class IndexModel : PageModel
     public IndexModel(ILogger<IndexModel> logger)
     {
         _logger = logger;
+
+        System.Diagnostics.Trace.TraceError("If you're seeing this, something bad happened");
     }
 
     public void OnGet()
